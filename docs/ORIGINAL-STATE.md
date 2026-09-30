@@ -1,17 +1,21 @@
 # Original state and preservation record
 
-- Historical source: Phase 7E snapshot directory dated 2026-09-12.
-- Historical period: circa 11–13 September 2026; medium confidence for this representative, unresolved confidence for being the earliest Rust version.
+- Historical source: `E:\Topazio\backups\topazio-network-phase7e-20260912-2354`.
+- Historical period: circa 11–13 September 2026; medium confidence for this Generation 1 representative, unresolved confidence that it is the earliest Rust version.
 - Scope: 27 Rust source files, one Rust integration test, `Cargo.toml`, and `Cargo.lock`; 30 selected source files total.
-- Public copy: source code preserved in place except removal of the optional author metadata line from the copied Cargo manifest. New documentation and ignore rules were authored for this archive.
+- Public copy: source code preserved byte-for-byte except removal of the optional author metadata line from the copied Cargo manifest. Eleven new historical documents and a new `.gitignore` were authored for this archive.
 - Excluded: source README/docs/configs/scripts/systemd files, build outputs, caches, logs, chainstate, wallets, archives, releases, vendored dependencies, and all Generation 2/3 material.
 - Related RC: `v1.0.0-testnet-rc1` is later and related; it is not the source copied here.
-- Older archive: the approximately 2026-09-11 ZIP remains uninspected; the repository makes no definitive first-version claim.
+- Older archive: the approximately 2026-09-11 ZIP remains uninspected; this repository makes no definitive first-version claim.
 - Publication/preservation date: 2026-09-30.
-- Source handling: `E:\Topazio` was read-only for this task. The source tree showed concurrent activity during the task; observed count changes are not attributed to this preservation.
+- Public repository: https://github.com/0xTPZ/topazio-network-generation-1
+- Initial preservation commit: `06b8c6143c993e0511e886a85a3e1678f92ec0ff`.
+- Source mode: read-only. No files were created, changed, moved, or deleted in `E:\Topazio` by this task.
+- Source inventory before: 401,138 files; 49,093 directories; 178,413,133,896 bytes. Source inventory after: 402,141 files; 49,138 directories; 178,614,776,764 bytes. These are non-atomic recursive observations; concurrent activity was detected and changes are not attributed to this preservation.
+- Source Git status entry counts before/after: `topazio-network` 147/147; `production-baseline-review` 130/130; `topazio-mining-gateway` 6/6. HEADs were unchanged during this task.
 - Build: PASS (`cargo test --locked --offline`, compiled successfully in the copy).
-- Original tests: PASS — 220 tests passed across library, binaries, integration test, and doc-test targets; no source changes were made to obtain this result.
+- Tests: PASS — 220 tests passed across library, binaries, integration test, and doc-test targets; no source changes were made to obtain this result.
 - Smoke test: NOT ATTEMPTED; no live network service was launched.
-- Scan results: original selection, sanitized copy, staged index, and remote tree/history were checked before/after publication. Pattern scans are not mathematical proof of absence.
-
-
+- Secret scans #1–#4: PASS. The source selection had no private-key markers, key candidates, wallet files, or email addresses. Remaining generic credential-pattern matches were reviewed as code expressions/fixtures, not secret literals. The scans also found only local loopback/wildcard or documentation-reserved IP patterns; operational endpoints/configurations were excluded. No personal data, real wallet material, logs, chainstate, or binary/release material was selected or published.
+- Remote verification: 43 GitHub blobs and the complete remote history were inspected; the published remote tree matched the audited local tree. The remote history contained only the new preservation commit at initial publication.
+- Pattern scans are not mathematical proof of absence.
